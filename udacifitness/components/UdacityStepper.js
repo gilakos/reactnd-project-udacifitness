@@ -7,17 +7,15 @@ export default function UdacityStepper ({ max, unit, step, value, onIncrement, o
     <View>
       <View>
         <TouchableOpacity onPress={onDecrement}>
-          <FontAwesome name='minus' size={30} color={'black'}/>
+          <FontAwesome name='minus' size={30} color={'black'} />
         </TouchableOpacity>
         <TouchableOpacity onPress={onIncrement}>
-          <FontAwesome name='plus' size={30} color={'black'}/>
+          <FontAwesome name='plus' size={30} color={'black'} />
         </TouchableOpacity>
-        <Text>UdacityStepper</Text>
       </View>
       <View>
         <Text>{value}</Text>
         <Text>{unit}</Text>
-
       </View>
     </View>
   )

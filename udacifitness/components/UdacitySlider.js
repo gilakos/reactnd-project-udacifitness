@@ -4,14 +4,17 @@ import { View, Text, Slider } from 'react-native'
 export default function UdacitySlider ({ max, unit, step, value, onChange }) {
   return (
     <View>
-      <slider
+      <Slider
         step={step}
         value={value}
         maximumValue={max}
-        minimumValue={min}
+        minimumValue={0}
         onChange={onChange}
       />
-      <Text>UdacitySlider</Text>
+      <View>
+        <Text>{value}</Text>
+        <Text>{unit}</Text>
+      </View>
     </View>
   )
 }
